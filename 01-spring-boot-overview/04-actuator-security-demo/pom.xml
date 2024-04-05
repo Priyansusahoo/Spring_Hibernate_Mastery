@@ -11,8 +11,8 @@
 	<groupId>com.priyansu.application</groupId>
 	<artifactId>bluecomet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bluecomet</name>
-	<description>BlueComet project</description>
+	<name>BlueComet</name>
+	<description>BlueComet Project</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -33,6 +33,7 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<!-- ADDING SUPPORT FOR SPRING SECURITY -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
