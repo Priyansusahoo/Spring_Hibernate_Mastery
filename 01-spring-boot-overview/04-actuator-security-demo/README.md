@@ -7,8 +7,10 @@
 ##  - @Value
 ##  - application.properties.
 ##  - [Actuator Endpoint - (e.g. health, info, beans, threaddump, mappings) prefix it with "actuator/"](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator.endpoints)
-            e.g. of endpoint - (/actuator/info)
-            Go to this section => (13.1. Enabling Production-ready Features -> 13.2. Endpoints)
+            - e.g. of endpoint - (/actuator/info).
+            - For More Details : Go to this section => (13.1. Enabling Production-ready Features -> 13.2. Endpoints).
+##  - Spring-Security:
+            - Customize endpoints like which endpoint to include and exclude in application.properties using Spring-Security.
 ##  - [SpringBean scope](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html) : 
 ###    - singleton : 
             (Default) Scopes a single bean definition to a single object instance for each Spring IoC container.
