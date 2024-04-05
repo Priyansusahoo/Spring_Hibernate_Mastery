@@ -27,15 +27,30 @@ public class TestController {
 
     /**
      * NOTE 2:
-     * "TestController.name" is defined in "application.properties" and by
-     * using @Value springboot injects the value of "TestController.name" i.e. "Priyansu" to field "name".
+     * "member.name" is defined in "application.properties" and by
+     * using @Value springboot injects the value of "member.name" i.e. "Priyansu" to field "name".
      */
-    @Value("${TestController.name}") // refer to NOTE 2.
+    @Value("${member.name}") // refer to NOTE 2.
     private String name;
 
-    @GetMapping("/test")
+    @Value("${team.name}")
+    private String name2;
+
+    @GetMapping("/")
     @ResponseBody
     public String test(){
-        return this.name + " test"; // Here we return the "name" field injected by springboot from "application.properties"
+        return "Access: 'test1' OR 'test2'"; // Here we return the "name" field injected by springboot from "application.properties"
+    }
+
+    @GetMapping("/test1")
+    @ResponseBody
+    public String test1(){
+        return this.name; // Here we return the "name" field injected by springboot from "application.properties"
+    }
+
+    @GetMapping("/test2")
+    @ResponseBody
+    public String test2(){
+        return this.name2; // Here we return the "name" field injected by springboot from "application.properties"
     }
 }
