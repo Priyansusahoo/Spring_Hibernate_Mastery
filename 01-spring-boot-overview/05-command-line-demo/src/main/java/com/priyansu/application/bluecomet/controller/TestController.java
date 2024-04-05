@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * {@code @Author} Priyansu Sahoo
+ * @author Priyansu Sahoo
+ * @Project BlueComet
  */
 /*
  * NOTE 1:
