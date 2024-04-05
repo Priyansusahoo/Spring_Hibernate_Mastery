@@ -11,6 +11,10 @@
             - For More Details : Go to this section => (13.1. Enabling Production-ready Features -> 13.2. Endpoints).
 ##  - Spring-Security:
             - Customize endpoints like which endpoint to include and exclude in application.properties using Spring-Security.
+##  - command-line:
+            - Execute ${mvnw package} command in the project root directory(OS: Windows)
+            - Then navigate to \target folder and execute this command ${java -jar [JAR FILE NAME]}
+            - e.g. ${java -jar bluecomet-0.0.1-SNAPSHOT.jar}
 ##  - [SpringBean scope](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html) : 
 ###    - singleton : 
             (Default) Scopes a single bean definition to a single object instance for each Spring IoC container.
