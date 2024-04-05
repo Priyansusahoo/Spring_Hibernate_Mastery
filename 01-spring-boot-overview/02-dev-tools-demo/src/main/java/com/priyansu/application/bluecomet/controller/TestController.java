@@ -29,9 +29,9 @@ public class TestController {
     @Value("${TestController.name}") // refer to NOTE 2.
     private String name;
 
-    @GetMapping("/")
+    @GetMapping("/test")
     @ResponseBody
     public String test(){
-        return this.name; // Here we return the "name" field injected by springboot from "application.properties"
+        return this.name + " test"; // Here we return the "name" field injected by springboot from "application.properties"
     }
 }
